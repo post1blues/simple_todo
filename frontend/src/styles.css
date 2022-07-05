@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Roboto, Oxygen, "Fira Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: #222435;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+}

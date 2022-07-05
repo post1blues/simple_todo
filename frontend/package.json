@@ -1,0 +1,42 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .ts,.js,.vue",
+    "lint:markup": "vue-tsc --noEmit",
+    "lint:fix": "eslint src --ext .ts,.js,.vue --fix",
+    "prettier": "prettier src/**/*.{vue,js,jsx,ts,tsx} --ignore-unknown",
+    "prettier:fix": "prettier src/**/*.{vue,js,jsx,ts,tsx} --write --ignore-unknown",
+    "stylelint": "stylelint src/**/*.{css,scss,vue}",
+    "stylelint:fix": "stylelint src/**/*.{css,scss,vue} --fix"
+  },
+  "dependencies": {
+    "@types/node": "^18.0.1",
+    "axios": "^0.27.2",
+    "pinia": "^2.0.14",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^11.0.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.1.0",
+    "eslint-plugin-vue": "^9.1.1",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.9.1",
+    "stylelint-config-recommended": "^8.0.0",
+    "stylelint-config-standard": "^26.0.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vue-eslint-parser": "^9.0.3",
+    "vue-tsc": "^0.34.7"
+  }
+}

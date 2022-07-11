@@ -1,6 +1,6 @@
 <template>
   <div>
-    <todo-item v-for="task in taskList" :key="task._id" :task="task" />
+    <TodoItem v-for="task in taskList" :key="task._id" :task="task" />
   </div>
 </template>
 
@@ -10,7 +10,7 @@
   import { ITask } from '../interfaces/Task.interface'
 
   export default defineComponent({
-    components: { 'todo-item': TodoItem },
+    components: { TodoItem },
     props: {
       taskList: {
         type: Array as PropType<Array<ITask>>,

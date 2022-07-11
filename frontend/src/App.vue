@@ -1,11 +1,11 @@
 <template>
   <div class="todo-list">
-    <the-header />
-    <todo-input />
-    <todo-list :taskList="uncompletedTasks" />
+    <TheHeader />
+    <TodoInput />
+    <TodoList :taskList="uncompletedTasks" />
     <div class="breakline"></div>
-    <the-button @click="showCompleted = !showCompleted" />
-    <todo-list :taskList="completedTasks" v-if="showCompleted" />
+    <TheButton @click="showCompleted = !showCompleted" />
+    <TodoList :taskList="completedTasks" v-if="showCompleted" />
   </div>
 </template>
 
@@ -20,10 +20,7 @@
 
   export default defineComponent({
     components: {
-      'the-header': TheHeader,
-      'todo-list': TodoList,
-      'todo-input': TodoInput,
-      'the-button': TheButton,
+      TheHeader, TodoList, TodoInput, TheButton,
     },
     data() {
       return {

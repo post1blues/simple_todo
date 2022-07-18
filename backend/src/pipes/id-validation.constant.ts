@@ -1,1 +1,1 @@
-export const ID_VALIDATION_ERROR = 'Wrong format id'
+export const ID_VALIDATION_ERROR = 'Wrong format id';

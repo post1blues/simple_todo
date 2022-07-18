@@ -1,15 +1,15 @@
-import {Prop, Schema, SchemaFactory} from "@nestjs/mongoose";
-import { Document} from 'mongoose'
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { Document } from 'mongoose';
 
-export type TodoItemDocument = TodoItem & Document
+export type TodoItemDocument = TodoItem & Document;
 
-@Schema({timestamps: true})
+@Schema({ timestamps: true })
 export class TodoItem {
-  @Prop({required: true})
-  text: string
+  @Prop({ required: true })
+  text: string;
 
-  @Prop({default: false})
-  isCompleted: boolean
+  @Prop({ default: false })
+  isCompleted: boolean;
 }
 
-export const TodoItemSchema = SchemaFactory.createForClass(TodoItem)
+export const TodoItemSchema = SchemaFactory.createForClass(TodoItem);

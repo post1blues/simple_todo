@@ -1,18 +1,18 @@
-import {IsBoolean, IsDate, IsString} from "class-validator";
+import { IsBoolean, IsDate, IsString } from 'class-validator';
 
 export class TodoItemDto {
   @IsString()
-  id: string
+  id: string;
 
   @IsString()
-  text: string
+  text: string;
 
   @IsBoolean()
-  isCompleted: boolean
+  isCompleted: boolean;
 
   @IsDate()
-  createdAt: Date
+  createdAt: Date;
 
   @IsDate()
-  updatedAt: Date
+  updatedAt: Date;
 }

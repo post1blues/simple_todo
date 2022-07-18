@@ -35,8 +35,6 @@ services:
       - backend
     networks:
       - service_network
-    environment:
-      - BACKEND_URI=http://backend:3000/tasks
 
 networks:
   service_network:
